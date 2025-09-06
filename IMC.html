@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calculadora de IMC</title>
+  <link rel="stylesheet" href="IMC.css">
+</head>
+<body>
+  <div class="calculadora">
+    <h1>Calcule seu IMC</h1>
+    <p>Digite sua altura em metros e seu peso em quilogramas para calcular seu Índice de Massa Corporal (IMC).</p>
+
+    <input type="number" id="txtpeso" placeholder="Peso (kg)" />
+    <input type="number" id="txtaltura" placeholder="Altura (m)" />
+    <input type="button" value="Calcular IMC" onclick="calcularIMC()" />
+    <div id="txtimc"></div>
+  </div>
+
+  <script src="IMC.JS"></script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+:root {
+  --bg-color: #000000;
+  --box-color: #262626;
+  --text-color: #ffffff;
+  --input-bg: #2c2c2c;
+  --highlight: #ffffff;
+}
+
+body.light-mode {
+  --bg-color: #fffffff9;
+  --box-color: #ffffff;
+  --text-color: #000000;
+  --input-bg: #e0e0e0;
+  --highlight: #007dd6;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-color: var(--bg-color);
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.calculadora {
+  background-color: var(--box-color);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgb(0, 0, 0);
+  text-align: center;
+  width: 320px;
+  transition: background-color 0.3s ease;
+}
+
+.calculadora h1 {
+  margin-bottom: 20px;
+  font-size: 1.8em;
+}
+
+.calculadora p {
+  font-size: 0.95em;
+  margin-bottom: 20px;
+  color: var(--text-color);
+}
+
+input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--input-bg);
+  color: var(--text-color);
+}
+
+input[type="button"], button {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  background-color: #4db250;
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+input[type="button"]:hover, button:hover {
+  background-color: #f85555;
+}
+
+#txtimc {
+  margin-top: 20px;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: var(--highlight);
+}
